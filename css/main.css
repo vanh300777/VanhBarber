@@ -1,5 +1,5 @@
 .container-fluid{
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,.7)), 
+    background:linear-gradient(rgba(0, 0, 0, .8), rgba(0,0,0,.8)), 
                url(/img/Untitled-2.jpg) ;
     height:500px;
     padding:50px !important;
@@ -8,8 +8,42 @@ a{
     font-family: "Karantina",sans-serif;
     color:white !important;
     font-size:30px;
+    text-transform: uppercase;
+    font-weight:400;
 }
 .col-sm-6{
     margin-right:auto;
     margin-left:auto;
+}
+.nav-link{
+  padding: 0 50px !important;
+}
+.nav-item .sub-menu{
+  position: absolute;
+  background:rgba((0, 0, 0, .8), rgba(0,0,0,.8));
+  line-height:40px;
+  left:-5px;
+  list-style:none;
+  pointer-events:none;
+  transform: translateY(20px);
+  opacity:0;
+}
+.nav-item:hover .sub-menu{
+  pointer-events:all;
+  transform: translateY(0);
+  opacity: 1;
+  
+}
+.nav-item .sub-menu .sub-item{
+  position: relative;
+  padding:7px 0;
+}
+.nav-item .sub-menu .sub-item a{
+  color:#000;
+  padding:15px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.site-header-search{
+  color: white;
 }
